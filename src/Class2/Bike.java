@@ -51,6 +51,9 @@ public class Bike {
     public static void main(String[] args){
         Bike bike1 = new Bike("NS 200",1211,121122,"2025","White");
         System.out.println(bike1.name);
+        bike1.pressAccelerate();
+        bike1.pressBreak();
+        bike1.releaseAccelerate();
 
     }
 
