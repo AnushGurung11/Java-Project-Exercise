@@ -35,5 +35,24 @@ public class Bike {
         System.out.println("Side lights Off");
     }
 
+    //Creating a constructor for the Bike class
+
+    public Bike(String name, int model , double enginNumber, String manufacturedDate, String color){
+        this.name = name;
+        this.model = model;
+        this.enginNumber = enginNumber;
+        this.manufacturedDate = manufacturedDate;
+        this.color = color;
+
+        System.out.println("An Object created");
+    }
+
+    //Creating a main method for running the program
+    public static void main(String[] args){
+        Bike bike1 = new Bike("NS 200",1211,121122,"2025","White");
+        System.out.println(bike1.name);
+
+    }
+
 
 }
