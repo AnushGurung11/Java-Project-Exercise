@@ -21,5 +21,19 @@ public class Bike {
         System.out.println("Moving");
     }
 
+    public void pressAccelerate(){
+        System.out.println("Speeding");
+    }
+    public void releaseAccelerate(){
+        System.out.println("Not Speeding");
+    }
+
+    public void turnOnSidelight(){
+        System.out.println("Side lights On");
+    }
+    public void turnOffSideLight(){
+        System.out.println("Side lights Off");
+    }
+
 
 }
