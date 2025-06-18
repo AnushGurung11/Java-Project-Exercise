@@ -11,6 +11,15 @@ public class Bike {
     public String color;
 
     //Behaviours of Bike
+    //break , accelerate, turn on side light
+
+    public void pressBreak(){
+        System.out.println("Stopped");
+    }
+
+    public void releaseBreak(){
+        System.out.println("Moving");
+    }
 
 
 }
