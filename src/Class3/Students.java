@@ -37,6 +37,7 @@ public class Students {
 
 
 
+
      }
         public String getName() {
         return name;
@@ -53,9 +54,9 @@ public class Students {
         this.grade = grade;
     }
 
-    public static void main(String[] args){
-        Students student = new Students(1,"Anush",90);
-        System.out.println(student.getGrade());
-
+    public int getMarks(){
+        return this.grade;
     }
+
+
 }
