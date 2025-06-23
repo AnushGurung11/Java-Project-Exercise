@@ -20,9 +20,9 @@ public class School {
         //TODO Storing the students objects in the array list
         Students student1 = new Students(1,"Anush",80);
         Students student2 = new Students(2,"Rythm",90);
-        Students student3 = new Students(3,"abab",30);
-        Students student4 = new Students(4,"cdcd",10);
-        Students student5 = new Students(5,"efefe",50);
+        Students student3 = new Students(3,"abab",65);
+        Students student5 = new Students(5,"efefe",55);
+        Students student4 = new Students(4,"cdcd",45);
 
         students.add(student1);
         students.add(student2);
@@ -31,21 +31,17 @@ public class School {
         students.add(student5);
 
 
+
         //Storing the objets of students
         ArrayList<Students> topper =new ArrayList<>();
 
         //Looping through the array list
         for(Students each : students){
             String grade = each.getGrade();
-
-            if(grade ==  "A"){
-                topper.add(each);
-            }else if (grade == "B"){
-                topper.add(each);
-            }else if (grade == "C"){
+            System.out.println(grade);
+            if(each.getMarks() >=  70){
                 topper.add(each);
             }
-
         }
 
         System.out.println("The toppers of the class are: ");
@@ -73,7 +69,6 @@ public class School {
                 System.out.println("The average grade of the class is C");
             }else{
                 System.out.println("The average grade of the class is D");
-
             }
 
     }

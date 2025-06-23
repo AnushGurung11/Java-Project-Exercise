@@ -26,9 +26,9 @@ public class Students {
         }else{
             if(this.grade>70 && this.grade <= 100){
                 return "A";
-            } else if(this.grade<70 && this.grade > 50){
+            } else if(this.grade<=70 && this.grade > 50){
                 return "B";
-            } else if(this.grade<50 && this.grade >40) {
+            } else if(this.grade<=50 && this.grade >=40) {
                 return "C";
             }else{
                 return "F";
